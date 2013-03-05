@@ -1,0 +1,135 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta ()
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/05/13 03:21:24
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/1/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/1/testnet3/database ErrorFile=/home/yebyen/testnet-box/1/testnet3/db.log
+Bound to [::]:19000
+Bound to 0.0.0.0:19000
+Loading block index...
+LoadBlockIndex(): hashBestChain=00000000a5a7cb32d10b  height=732  date=06/05/12 01:16:46
+Verifying last 732 blocks at level 1
+ block index             274ms
+Loading wallet...
+nFileVersion = 69900
+ wallet                 9507ms
+Loading addresses...
+ERROR: CAddrman::Read() : open failed
+Invalid or missing peers.dat; recreating
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 733
+nBestHeight = 732
+setKeyPool.size() = 7
+mapWallet.size() = 176
+mapAddressBook.size() = 1
+Done loading
+send version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+ThreadMessageHandler started
+ThreadOpenConnections started
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+ThreadIRCSeed exited
+ThreadSocketHandler started
+ThreadDNSAddressSeed started
+0 addresses found from DNS seeds
+ThreadDNSAddressSeed exited
+ThreadRPCServer started
+Flushed 0 addresses to peers.dat  12ms
+GetMyExternalIP() received [74.67.183.179] 74.67.183.179:0
+GetMyExternalIP() returned 74.67.183.179
+AddLocal(74.67.183.179:19000,5)
+accepted connection 127.0.0.1:59282
+send version message: version 60002, blocks=732, us=74.67.183.179:19000, them=0.0.0.0:0, peer=127.0.0.1:59282
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:59282
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=getinfo
+keypool reserve 178
+keypool return 178
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 178
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (188 bytes)
+keypool reserve 179
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (188 bytes)
+ThreadRPCServer method=getinfo
+keypool added key 185, size=6
+keypool reserve 180
+keypool return 180
+hashmeter   2 CPUs    254 khash/s
+Flushing wallet.dat
+Flushed wallet.dat 22ms
+ThreadRPCServer method=getinfo
+keypool reserve 180
+keypool return 180
+ThreadRPCServer method=getinfo
+keypool reserve 180
+keypool return 180
+ThreadRPCServer method=getinfo
+keypool reserve 180
+keypool return 180
+ThreadRPCServer method=getinfo
+keypool reserve 180
+keypool return 180
+ThreadRPCServer method=getgenerate
+ThreadRPCServer method=gethashes
+ThreadRPCServer method=help
+ThreadRPCServer method=gethashespersec
+ThreadRPCServer method=getinfo
+keypool reserve 180
+keypool return 180
+ThreadRPCServer method=getblocks
+Flushed 0 addresses to peers.dat  19ms
+ThreadRPCServer method=help
+ThreadRPCServer method=help
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=help
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  18ms
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+blkindex.dat detach
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadBitcoinMiner exiting, 0 threads remaining
+ThreadMessageHandler exited
+ThreadSocketHandler exited
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+ThreadOpenConnections exited
+wallet.dat closed
+DBFlush(false) ended             690ms
+StopNode()
+Flushed 0 addresses to peers.dat  23ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+

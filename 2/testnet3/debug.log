@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta ()
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/05/13 03:21:40
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+LoadBlockIndex(): hashBestChain=00000000a5a7cb32d10b  height=732  date=06/05/12 01:16:46
+Verifying last 732 blocks at level 1
+ block index             281ms
+Loading wallet...
+nFileVersion = 69900
+ wallet                 1165ms
+Loading addresses...
+ERROR: CAddrman::Read() : open failed
+Invalid or missing peers.dat; recreating
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 733
+nBestHeight = 732
+setKeyPool.size() = 9
+mapWallet.size() = 6
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadIRCSeed exited
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+ThreadMessageHandler started
+ThreadSocketHandler started
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=732, us=0.0.0.0:0, them=74.67.183.179:19000, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+Flushed 0 addresses to peers.dat  338ms
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  654ms
+socket closed
+disconnecting node 127.0.0.1:19000
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connect() failed after select(): Connection refused
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+blkindex.dat detach
+ThreadSocketHandler exited
+ThreadMessageHandler exited
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+ThreadOpenConnections exited
+wallet.dat closed
+DBFlush(false) ended             646ms
+StopNode()
+Flushed 0 addresses to peers.dat  18ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
