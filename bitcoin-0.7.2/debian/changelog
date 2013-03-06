@@ -1,3 +1,12 @@
+bitcoin (0.7.2-4) unstable; urgency=low
+
+  [ Kingdon Barrett ]
+  * Disable checkpoints, disable test of checkpointing.
+  * Allow initial genesis to start without any blk0001.dat.
+  * Lower initial difficulty / minimum acceptable difficulty
+
+ -- Kingdon Barrett <kingdon@tuesdaystudios.com>  Tue, 05 Mar 2013 19:49:30
+
 bitcoin (0.7.2-3) unstable; urgency=low
 
   [ Petter Reinholdtsen ]
