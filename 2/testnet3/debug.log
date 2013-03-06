@@ -104,3 +104,4524 @@ Flush(true)
 DBFlush(true) ended               0ms
 Bitcoin exited
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta ()
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 00:36:18
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+LoadBlockIndex(): hashBestChain=00000000a5a7cb32d10b  height=732  date=06/05/12 01:16:46
+Verifying last 732 blocks at level 1
+ block index             293ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                 9300ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  1ms
+mapBlockIndex.size() = 733
+nBestHeight = 732
+setKeyPool.size() = 9
+mapWallet.size() = 6
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadMessageHandler started
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+ThreadSocketHandler started
+ThreadIRCSeed exited
+Flushed 0 addresses to peers.dat  755ms
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=732, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getinfo
+keypool reserve 8
+keypool return 8
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 8
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (188 bytes)
+keypool reserve 9
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (188 bytes)
+ThreadRPCServer method=getinfo
+keypool reserve 10
+keypool return 10
+hashmeter   2 CPUs    161 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  12ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  629ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+ThreadRPCServer exited
+ThreadSocketHandler exited
+ThreadMessageHandler exited
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadOpenConnections exited
+blkindex.dat detach
+ThreadBitcoinMiner exiting, 0 threads remaining
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+wallet.dat closed
+DBFlush(false) ended            1242ms
+StopNode()
+Flushed 0 addresses to peers.dat  329ms
+Flush(true)
+DBFlush(true) ended               1ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta ()
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 00:41:03
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+CBlock(hash=000000000933ea01ad0e, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=4a5e1e4baa, nTime=1296688602, nBits=1d00ffff, nNonce=414098458, vtx=1)
+  CTransaction(hash=4a5e1e4baa, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
+    CTxOut(nValue=50.00000000, scriptPubKey=04678afdb0fe5548271967f1a67130)
+  vMerkleTree: 4a5e1e4baa 
+SetBestChain: new best=000000000933ea01ad0e  height=0  work=4295032833  date=02/02/11 23:16:42
+ block index           10519ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                  837ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 1
+nBestHeight = 0
+setKeyPool.size() = 9
+mapWallet.size() = 6
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadMessageHandler started
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+ThreadSocketHandler started
+ThreadIRCSeed exited
+Flushed 0 addresses to peers.dat  10ms
+ThreadRPCServer method=getmininginfo
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 8
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool reserve 9
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+hashmeter   2 CPUs    124 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  320ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  26ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  332ms
+Flushed 0 addresses to peers.dat  641ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  1864ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  420ms
+Flushed 0 addresses to peers.dat  319ms
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  22ms
+hashmeter   2 CPUs    114 khash/s
+Flushed 0 addresses to peers.dat  15ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  14ms
+received block 00000000043b06b1d08e
+SetBestChain: new best=00000000043b06b1d08e  height=1  work=8590065666  date=03/06/13 01:17:33
+ProcessBlock: ACCEPTED
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 329ms
+Flushed 0 addresses to peers.dat  13ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  13ms
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  621ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  311ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  322ms
+Flushed 0 addresses to peers.dat  333ms
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  17ms
+Flushed 0 addresses to peers.dat  76ms
+Flushed 0 addresses to peers.dat  895ms
+Flushed 0 addresses to peers.dat  12ms
+hashmeter   2 CPUs    147 khash/s
+Flushed 0 addresses to peers.dat  28ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  318ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  52ms
+Flushed 0 addresses to peers.dat  634ms
+Flushed 0 addresses to peers.dat  14ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  33ms
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  416ms
+Flushed 0 addresses to peers.dat  379ms
+Flushed 0 addresses to peers.dat  388ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  253ms
+Flushed 0 addresses to peers.dat  30ms
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  267ms
+Flushed 0 addresses to peers.dat  11ms
+hashmeter   2 CPUs     52 khash/s
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  334ms
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  21ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  66ms
+Flushed 0 addresses to peers.dat  889ms
+Flushed 0 addresses to peers.dat  674ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  354ms
+Flushed 0 addresses to peers.dat  1024ms
+Flushed 0 addresses to peers.dat  330ms
+Flushed 0 addresses to peers.dat  326ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  322ms
+Flushed 0 addresses to peers.dat  16ms
+Flushed 0 addresses to peers.dat  187ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  582ms
+Flushed 0 addresses to peers.dat  25ms
+hashmeter   2 CPUs     65 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  339ms
+Flushed 0 addresses to peers.dat  80ms
+Flushed 0 addresses to peers.dat  322ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  270ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  36ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  325ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  216ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  620ms
+Flushed 0 addresses to peers.dat  14ms
+hashmeter   2 CPUs     65 khash/s
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  2284ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  34ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  16ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+hashmeter   2 CPUs    153 khash/s
+Flushed 0 addresses to peers.dat  25ms
+Flushed 0 addresses to peers.dat  26ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  17ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  14ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  352ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  10ms
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+ThreadMessageHandler exited
+ThreadSocketHandler exited
+ThreadOpenConnections exited
+blkindex.dat checkpoint
+blkindex.dat detach
+ThreadBitcoinMiner exiting, 1 threads remaining
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+ThreadBitcoinMiner exiting, 0 threads remaining
+wallet.dat closed
+DBFlush(false) ended            1426ms
+StopNode()
+Flushed 0 addresses to peers.dat  352ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta ()
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 03:59:30
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+LoadBlockIndex(): hashBestChain=00000000043b06b1d08e  height=1  date=03/06/13 01:17:33
+Verifying last 1 blocks at level 1
+ block index               3ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                 2853ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 2
+nBestHeight = 1
+setKeyPool.size() = 9
+mapWallet.size() = 6
+mapAddressBook.size() = 1
+Done loading
+send version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadRPCServer started
+ThreadMessageHandler started
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+ThreadSocketHandler started
+ThreadIRCSeed exited
+Flushed 0 addresses to peers.dat  298ms
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 8
+keypool reserve 9
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+hashmeter   2 CPUs    123 khash/s
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  15ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  18ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  22ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  13ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  15ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  14ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  498ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  318ms
+hashmeter   2 CPUs     32 khash/s
+Flushed 0 addresses to peers.dat  286ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  35ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  15ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  17ms
+Flushed 0 addresses to peers.dat  2006ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  242ms
+hashmeter   2 CPUs     55 khash/s
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  5878ms
+Flushed 0 addresses to peers.dat  572ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  609ms
+Flushed 0 addresses to peers.dat  1643ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  9ms
+Flushed 0 addresses to peers.dat  1216ms
+Flushed 0 addresses to peers.dat  15ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  320ms
+Flushed 0 addresses to peers.dat  22ms
+hashmeter   2 CPUs     80 khash/s
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  326ms
+Flushed 0 addresses to peers.dat  30ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  131ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  242ms
+Flushed 0 addresses to peers.dat  270ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  1734ms
+Flushed 0 addresses to peers.dat  328ms
+Flushed 0 addresses to peers.dat  310ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  16ms
+Flushed 0 addresses to peers.dat  519ms
+Flushed 0 addresses to peers.dat  349ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  575ms
+hashmeter   2 CPUs     81 khash/s
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  9870ms
+Flushed 0 addresses to peers.dat  1531ms
+Flushed 0 addresses to peers.dat  12ms
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+ThreadRPCServer exited
+ThreadSocketHandler exited
+ThreadMessageHandler exited
+blkindex.dat checkpoint
+ThreadOpenConnections exited
+blkindex.dat detach
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadBitcoinMiner exiting, 0 threads remaining
+wallet.dat detach
+wallet.dat closed
+DBFlush(false) ended            1147ms
+StopNode()
+Flushed 0 addresses to peers.dat  36ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta (2013-03-05 23:14:45 -0500)
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 06:08:27
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+LoadBlockIndex(): hashBestChain=00000000043b06b1d08e  height=1  date=03/06/13 01:17:33
+Verifying last 1 blocks at level 1
+ block index               5ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                 3137ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 2
+nBestHeight = 1
+setKeyPool.size() = 9
+mapWallet.size() = 6
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadMessageHandler started
+ThreadSocketHandler started
+ThreadIRCSeed exited
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+Flushed 0 addresses to peers.dat  2168ms
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 8
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool reserve 9
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 0 BitcoinMiner threads
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 0 BitcoinMiner threads
+hashmeter   2 CPUs    146 khash/s
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=1, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 0 BitcoinMiner threads
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  22ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  16ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  29ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  16ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  20ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  37ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  23ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  35ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  329ms
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+ThreadRPCServer exited
+ThreadMessageHandler exited
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadSocketHandler exited
+blkindex.dat checkpoint
+ThreadBitcoinMiner exiting, 0 threads remaining
+blkindex.dat detach
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+wallet.dat closed
+DBFlush(false) ended             426ms
+StopNode()
+ThreadOpenConnections exited
+Flushed 0 addresses to peers.dat  19ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta (2013-03-05 23:14:45 -0500)
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 06:24:04
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+CBlock(hash=000000000933ea01ad0e, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=4a5e1e4baa, nTime=1296688602, nBits=1d00ffff, nNonce=414098458, vtx=1)
+  CTransaction(hash=4a5e1e4baa, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
+    CTxOut(nValue=50.00000000, scriptPubKey=04678afdb0fe5548271967f1a67130)
+  vMerkleTree: 4a5e1e4baa 
+SetBestChain: new best=000000000933ea01ad0e  height=0  work=4295032833  date=02/02/11 23:16:42
+ block index            8169ms
+Loading wallet...
+nFileVersion = 70200
+Performing wallet upgrade to 60000
+keypool added key 1, size=1
+keypool added key 2, size=2
+keypool added key 3, size=3
+keypool added key 4, size=4
+keypool added key 5, size=5
+keypool added key 6, size=6
+keypool reserve 1
+keypool keep 1
+ wallet                 1408ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  1ms
+mapBlockIndex.size() = 1
+nBestHeight = 0
+setKeyPool.size() = 5
+mapWallet.size() = 0
+mapAddressBook.size() = 1
+Done loading
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadRPCServer started
+ThreadIRCSeed exited
+ThreadSocketHandler started
+ThreadMessageHandler started
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+Flushed 0 addresses to peers.dat  34ms
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+Flushing wallet.dat
+Flushed wallet.dat 27ms
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool added key 7, size=6
+keypool reserve 2
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 8, size=6
+keypool reserve 3
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 13ms
+hashmeter   2 CPUs    131 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  24ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  31ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  38ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  339ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  25ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  25ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  29ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  331ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  36ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ResendWalletTransactions()
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  17ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+ThreadSocketHandler exited
+ThreadMessageHandler exited
+ThreadBitcoinMiner exiting, 1 threads remaining
+blkindex.dat detach
+blkindex.dat closed
+DBFlush(false) ended             349ms
+StopNode()
+ThreadBitcoinMiner exiting, 0 threads remaining
+ThreadOpenConnections exited
+Flushed 0 addresses to peers.dat  19ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta (2013-03-05 23:14:45 -0500)
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 07:01:05
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+LoadBlockIndex(): hashBestChain=000000000933ea01ad0e  height=0  date=02/02/11 23:16:42
+Verifying last 0 blocks at level 1
+ block index               3ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                 4918ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  339ms
+mapBlockIndex.size() = 1
+nBestHeight = 0
+setKeyPool.size() = 7
+mapWallet.size() = 0
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadOpenConnections started
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+ThreadMessageHandler started
+ThreadIRCSeed exited
+ThreadSocketHandler started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connect() failed after select(): Connection refused
+Flushed 0 addresses to peers.dat  27ms
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connect() failed after select(): Connection refused
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 2
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool reserve 3
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000036c74561416e271356bd37327ca783a1b20ff847a008be121c116418b65  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000036c74561416e271, ver=2, hashPrevBlock=000000000933ea01ad0e, hashMerkleRoot=e133d6802e, nTime=1362553277, nBits=1f03ffff, nNonce=4282777600, vtx=1)
+  CTransaction(hash=e133d6802e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 510101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d90d80dc16715630d24f56903884)
+  vMerkleTree: e133d6802e 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 00006e57987e428181a82872d77d03391f2536d1ed341802435de2bb56cae943  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00006e57987e428181a8, ver=2, hashPrevBlock=000000000933ea01ad0e, hashMerkleRoot=35d4859742, nTime=1362553277, nBits=1f03ffff, nNonce=5373952, vtx=1)
+  CTransaction(hash=35d4859742, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 510101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03a82c48bb05da87c699adf59b0435)
+  vMerkleTree: 35d4859742 
+generated 50.00
+keypool keep 3
+AddToWallet e133d6802e  new
+SetBestChain: new best=0000036c74561416e271  height=1  work=4295049217  date=03/06/13 07:01:17
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 9, size=6
+keypool reserve 4
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received block 0000d313fc72c85f1fb1
+ProcessBlock: ACCEPTED
+received getdata for: block 0000036c74561416e271
+Flushing wallet.dat
+Flushed wallet.dat 297ms
+ThreadRPCServer method=getmininginfo
+hashmeter   2 CPUs    106 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  28ms
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  18ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  330ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  10ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  1089ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  21ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  307ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ResendWalletTransactions()
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  17ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  321ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  1066ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  310ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  10ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000be425dab10f852c4a96d705d26f13747b4a506540cf2cc01e1316579b121  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000be425dab10f852c4, ver=2, hashPrevBlock=0000036c74561416e271, hashMerkleRoot=37e81ae450, nTime=1362554478, nBits=1f03ffff, nNonce=2031861252, vtx=1)
+  CTransaction(hash=37e81ae450, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 520101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03a82c48bb05da87c699adf59b0435)
+  vMerkleTree: 37e81ae450 
+generated 50.00
+keypool keep 2
+AddToWallet 37e81ae450  new
+SetBestChain: new best=0000be425dab10f852c4  height=2  work=4295065601  date=03/06/13 07:21:18
+ProcessBlock: ACCEPTED
+received block 00002a88751b2dbb09f3
+ProcessBlock: ACCEPTED
+received getdata for: block 0000be425dab10f852c4
+keypool added key 10, size=6
+keypool reserve 5
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 385ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  19ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  23ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  22ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  26ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  25ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+hashmeter   2 CPUs     64 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  19ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+Flushed 0 addresses to peers.dat  336ms
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=listtransactions
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  19ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  21ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  24ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  28ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+received block 0000ffc29a8bdd0aad1e
+REORGANIZE
+REORGANIZE: Disconnect 2 blocks; 000000000933ea01ad0e..0000be425dab10f852c4
+REORGANIZE: Connect 3 blocks; 000000000933ea01ad0e..0000ffc29a8bdd0aad1e
+REORGANIZE: done
+ThreadRPCServer method=getmininginfo
+BitcoinMiner:
+proof-of-work found  
+  hash: 00004e540fb298055f2225fd7656dec146bc652bfc6dfbecfedc910b5a5ce9f5  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00004e540fb298055f22, ver=2, hashPrevBlock=0000be425dab10f852c4, hashMerkleRoot=c89c943577, nTime=1362555680, nBits=1f03ffff, nNonce=3963377666, vtx=1)
+  CTransaction(hash=c89c943577, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 530101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03065377d8920ef0eddae7b37d4c58)
+  vMerkleTree: c89c943577 
+generated 50.00
+SetBestChain: new best=0000ffc29a8bdd0aad1e  height=3  work=4295081985  date=03/06/13 07:41:19
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000b021c80686ae0b0ee467d95fb1a92ce0c14c93abe4f36f0f4027c9f2b99d  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000b021c80686ae0b0e, ver=2, hashPrevBlock=0000be425dab10f852c4, hashMerkleRoot=15653a9744, nTime=1362555682, nBits=1f03ffff, nNonce=3740490242, vtx=1)
+  CTransaction(hash=15653a9744, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 530102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02cc02a72667631144b835f108cb9a)
+  vMerkleTree: 15653a9744 
+generated 50.00
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 237ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  22ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  27ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ResendWalletTransactions()
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  10ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  649ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  12ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  31ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  22ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  31ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  15ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  11ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  4701ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  26ms
+ThreadRPCServer method=getmininginfo
+received block 0000b455f93e0b3134d9
+SetBestChain: new best=0000b455f93e0b3134d9  height=4  work=4295098369  date=03/06/13 08:01:21
+ProcessBlock: ACCEPTED
+BitcoinMiner:
+proof-of-work found  
+  hash: 000008498aa54df3eb1f51a2167d6be2e325819c07b72ade8aa4998e8817f278  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000008498aa54df3eb1f, ver=2, hashPrevBlock=0000ffc29a8bdd0aad1e, hashMerkleRoot=2d8fd3512c, nTime=1362556882, nBits=1f03ffff, nNonce=2980933378, vtx=1)
+  CTransaction(hash=2d8fd3512c, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 540101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03065377d8920ef0eddae7b37d4c58)
+  vMerkleTree: 2d8fd3512c 
+generated 50.00
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+ThreadRPCServer method=getmininginfo
+Flushed wallet.dat 356ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+hashmeter   2 CPUs     71 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  23ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  155ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  11ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  13ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000948f8f8b8491f0cabafa5da5e3e5c3e11ab808acc516f82675fc4184fe62  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000948f8f8b8491f0ca, ver=2, hashPrevBlock=0000b455f93e0b3134d9, hashMerkleRoot=9cedf08cb3, nTime=1362558082, nBits=1f03ffff, nNonce=972772100, vtx=1)
+  CTransaction(hash=9cedf08cb3, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 550101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03065377d8920ef0eddae7b37d4c58)
+  vMerkleTree: 9cedf08cb3 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000342073fe40c29f4c2b910ad59568822978c2a473e4257326cc98acfaa43b  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000342073fe40c29f4c, ver=2, hashPrevBlock=0000b455f93e0b3134d9, hashMerkleRoot=839deb998d, nTime=1362558082, nBits=1f03ffff, nNonce=1081293316, vtx=1)
+  CTransaction(hash=839deb998d, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 550104062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02cc02a72667631144b835f108cb9a)
+  vMerkleTree: 839deb998d 
+generated 50.00
+Flushed 0 addresses to peers.dat  429ms
+keypool keep 4
+AddToWallet 9cedf08cb3  new
+SetBestChain: new best=0000948f8f8b8491f0ca  height=5  work=4295114753  date=03/06/13 08:21:22
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 11, size=6
+keypool reserve 6
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 0000948f8f8b8491f0ca
+received block 00003a8e96c76d9cc4e4
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 56ms
+Flushed 0 addresses to peers.dat  326ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  13ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  328ms
+Flushed 0 addresses to peers.dat  11ms
+hashmeter   2 CPUs    190 khash/s
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  9ms
+Flushed 0 addresses to peers.dat  308ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  29ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 000020648ceefac4a58d53a733c1a8cabc589c7315f3cc5d9a9f179fcdd186db  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000020648ceefac4a58d, ver=2, hashPrevBlock=0000948f8f8b8491f0ca, hashMerkleRoot=92216c4c4f, nTime=1362559283, nBits=1f03ffff, nNonce=1921711876, vtx=1)
+  CTransaction(hash=92216c4c4f, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 560101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02cc02a72667631144b835f108cb9a)
+  vMerkleTree: 92216c4c4f 
+generated 50.00
+keypool keep 5
+AddToWallet 92216c4c4f  new
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000e451c31500aa04cf6425fdf9071905c6e704fc34e9719824b0ccf1f3c008  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000e451c31500aa04cf, ver=2, hashPrevBlock=0000948f8f8b8491f0ca, hashMerkleRoot=3b46dd6347, nTime=1362559284, nBits=1f03ffff, nNonce=2491022852, vtx=1)
+  CTransaction(hash=3b46dd6347, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 560102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: 3b46dd6347 
+generated 50.00
+SetBestChain: new best=000020648ceefac4a58d  height=6  work=4295131137  date=03/06/13 08:41:23
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 12, size=6
+received block 00009c9679337e551c14
+keypool reserve 7
+ProcessBlock: ACCEPTED
+received getdata for: block 000020648ceefac4a58d
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 67ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  138ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  34ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  19ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  29ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  13ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00009c4a2fbdb0a8b50e14717847a333c31b09d94ee148b3448bc6a56d4cc214  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00009c4a2fbdb0a8b50e, ver=2, hashPrevBlock=000020648ceefac4a58d, hashMerkleRoot=d38551ba6a, nTime=1362560484, nBits=1f03ffff, nNonce=296360197, vtx=1)
+  CTransaction(hash=d38551ba6a, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 570102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=030de7253dd2f95d6f50f52305c76a)
+  vMerkleTree: d38551ba6a 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 000038cdf45d73574e02d68775a30307e92f4169df3fbe069aff1df49c9061c6  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000038cdf45d73574e02, ver=2, hashPrevBlock=000020648ceefac4a58d, hashMerkleRoot=aa96f85d43, nTime=1362560485, nBits=1f03ffff, nNonce=409340933, vtx=1)
+  CTransaction(hash=aa96f85d43, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 570101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: aa96f85d43 
+generated 50.00
+keypool keep 7
+AddToWallet d38551ba6a  new
+SetBestChain: new best=00009c4a2fbdb0a8b50e  height=7  work=4295147521  date=03/06/13 09:01:24
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 13, size=6
+keypool reserve 8
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 00009c4a2fbdb0a8b50e
+received block 000055bbed3db41dac2b
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 48ms
+hashmeter   2 CPUs    130 khash/s
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 000028f5b6259bb2ba4b922738c0000806b07f7a491cde3d361bd9a17afc142e  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000028f5b6259bb2ba4b, ver=2, hashPrevBlock=00009c4a2fbdb0a8b50e, hashMerkleRoot=3b40a2312e, nTime=1362561685, nBits=1f03ffff, nNonce=1262341636, vtx=1)
+  CTransaction(hash=3b40a2312e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 580103062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03409f3330e778e5ba07217949a5b8)
+  vMerkleTree: 3b40a2312e 
+generated 50.00
+keypool keep 8
+AddToWallet 3b40a2312e  new
+SetBestChain: new best=000028f5b6259bb2ba4b  height=8  work=4295163905  date=03/06/13 09:21:25
+ProcessBlock: ACCEPTED
+BitcoinMiner:
+proof-of-work found  
+  hash: 000081882a742f906004dc51c894c2ad0e2881bd5c5738c2b00d554156268b2b  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000081882a742f906004, ver=2, hashPrevBlock=00009c4a2fbdb0a8b50e, hashMerkleRoot=7240198c0b, nTime=1362561685, nBits=1f03ffff, nNonce=1940646916, vtx=1)
+  CTransaction(hash=7240198c0b, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 580101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: 7240198c0b 
+generated 50.00
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 14, size=6
+keypool reserve 9
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 000028f5b6259bb2ba4b
+received block 0000bc26b3ad205e9214
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 40ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  36ms
+Flushed 0 addresses to peers.dat  9ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  16ms
+hashmeter   2 CPUs    113 khash/s
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  17ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  18ms
+Flushed 0 addresses to peers.dat  13ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00002f1e68e1bdec9040c013c58e2d207e8b614fe69e767eb543a1b1ef34fa8a  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00002f1e68e1bdec9040, ver=2, hashPrevBlock=000028f5b6259bb2ba4b, hashMerkleRoot=9b602bcca9, nTime=1362562886, nBits=1f03ffff, nNonce=3293307140, vtx=1)
+  CTransaction(hash=9b602bcca9, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 590104062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03caf7fce4684406e23bb5099768b0)
+  vMerkleTree: 9b602bcca9 
+generated 50.00
+keypool keep 9
+AddToWallet 9b602bcca9  new
+BitcoinMiner:
+proof-of-work found  
+  hash: 00009c1f396116cfec864dd25c510066d02466b2bfe7bb4bcae163f3cd1abf60  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00009c1f396116cfec86, ver=2, hashPrevBlock=000028f5b6259bb2ba4b, hashMerkleRoot=46be255aab, nTime=1362562887, nBits=1f03ffff, nNonce=1369582853, vtx=1)
+  CTransaction(hash=46be255aab, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 590101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: 46be255aab 
+generated 50.00
+SetBestChain: new best=00002f1e68e1bdec9040  height=9  work=4295180289  date=03/06/13 09:41:26
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 15, size=6
+keypool reserve 10
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 00002f1e68e1bdec9040
+received block 0000bb54b0b587f03083
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 53ms
+Flushed 0 addresses to peers.dat  17ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  17ms
+Flushed 0 addresses to peers.dat  320ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  323ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  331ms
+Flushed 0 addresses to peers.dat  9ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00003ade4657d1534ae790fa8cc6a70041ea8400677136394a18f0717496f2b1  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00003ade4657d1534ae7, ver=2, hashPrevBlock=00002f1e68e1bdec9040, hashMerkleRoot=89f68665fe, nTime=1362564088, nBits=1f03ffff, nNonce=2967022085, vtx=1)
+  CTransaction(hash=89f68665fe, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5a0105062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=033167d38e02a0d3a9b86b231ec281)
+  vMerkleTree: 89f68665fe 
+generated 50.00
+keypool keep 10
+AddToWallet 89f68665fe  new
+BitcoinMiner:
+proof-of-work found  
+  hash: 00001d838863ee472a8d1c4040b7737dae8b2d7cc309abe6d9ba80026b324ef5  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00001d838863ee472a8d, ver=2, hashPrevBlock=00002f1e68e1bdec9040, hashMerkleRoot=180123e9b9, nTime=1362564088, nBits=1f03ffff, nNonce=794111237, vtx=1)
+  CTransaction(hash=180123e9b9, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5a0101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: 180123e9b9 
+generated 50.00
+SetBestChain: new best=00003ade4657d1534ae7  height=10  work=4295196673  date=03/06/13 10:01:28
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 16, size=6
+keypool reserve 11
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received block 000001bbf7eebb28b7c9
+ProcessBlock: ACCEPTED
+received getdata for: block 00003ade4657d1534ae7
+Flushing wallet.dat
+Flushed wallet.dat 105ms
+hashmeter   2 CPUs     98 khash/s
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  12ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  310ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  12ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00000000080779cf2c78ffab329bfcdd2776a7401433b2f7aad8b5fa51c959da  
+target: 00000000ffff0000000000000000000000000000000000000000000000000000
+CBlock(hash=00000000080779cf2c78, ver=2, hashPrevBlock=00003ade4657d1534ae7, hashMerkleRoot=146f7015ef, nTime=1362565061, nBits=1d00ffff, nNonce=3006993156, vtx=1)
+  CTransaction(hash=146f7015ef, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5b0101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02796f170105fd3ffdc34ffdc94871)
+  vMerkleTree: 146f7015ef 
+generated 50.00
+keypool keep 6
+AddToWallet 146f7015ef  new
+SetBestChain: new best=00000000080779cf2c78  height=11  work=8590229506  date=03/06/13 10:17:41
+ProcessBlock: ACCEPTED
+keypool added key 17, size=6
+CreateNewBlock(): total size 1000
+keypool reserve 12
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 00000000080779cf2c78
+Flushing wallet.dat
+Flushed wallet.dat 49ms
+Flushed 0 addresses to peers.dat  309ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  390ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  313ms
+hashmeter   2 CPUs    136 khash/s
+Flushed 0 addresses to peers.dat  18ms
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  13ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00001fee62a9476015f454a6396552508e5232dd6787232fef8669ddd7977c4f  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00001fee62a9476015f4, ver=2, hashPrevBlock=00000000080779cf2c78, hashMerkleRoot=8c0cab6f66, nTime=1362566262, nBits=1f03ffff, nNonce=2512575748, vtx=1)
+  CTransaction(hash=8c0cab6f66, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5c0102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03010f918d44a37e4eac1954d55208)
+  vMerkleTree: 8c0cab6f66 
+generated 50.00
+keypool keep 12
+BitcoinMiner:
+proof-of-work found  
+  hash: 00008f322b1cec96f8fa64725a28a0e007c0c127ad9f8d08fafcee9d31ed574c  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00008f322b1cec96f8fa, ver=2, hashPrevBlock=00000000080779cf2c78, hashMerkleRoot=d5d66d85ad, nTime=1362566263, nBits=1f03ffff, nNonce=4097437956, vtx=1)
+  CTransaction(hash=d5d66d85ad, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5c0101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03b76e8d1ab32a1e4bf0fb62c65c2a)
+  vMerkleTree: d5d66d85ad 
+generated 50.00
+AddToWallet 8c0cab6f66  new
+SetBestChain: new best=00001fee62a9476015f4  height=12  work=8590245890  date=03/06/13 10:37:42
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 18, size=6
+keypool reserve 13
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received block 00001d02b0eacd6b0ddd
+ProcessBlock: ACCEPTED
+received getdata for: block 00001fee62a9476015f4
+Flushing wallet.dat
+Flushed wallet.dat 80ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  13ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00000000e68f500871e2f9199ee38e1493bf35c05b512de457dbd0afac88d6df  
+target: 00000000ffff0000000000000000000000000000000000000000000000000000
+CBlock(hash=00000000e68f500871e2, ver=2, hashPrevBlock=00001fee62a9476015f4, hashMerkleRoot=0b250a3f15, nTime=1362566501, nBits=1d00ffff, nNonce=2566979072, vtx=1)
+  CTransaction(hash=0b250a3f15, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5d0103062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02908bad87ba05d1557b7c56b1f8f3)
+  vMerkleTree: 0b250a3f15 
+generated 50.00
+keypool keep 13
+AddToWallet 0b250a3f15  new
+SetBestChain: new best=00000000e68f500871e2  height=13  work=12885278723  date=03/06/13 10:41:41
+ProcessBlock: ACCEPTED
+keypool added key 19, size=6
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool reserve 14
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 00000000e68f500871e2
+Flushing wallet.dat
+Flushed wallet.dat 367ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  9ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  19ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  25ms
+Flushed 0 addresses to peers.dat  13ms
+hashmeter   2 CPUs    168 khash/s
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000edbbf28a55faffce5b7a73fe9415a1f9e64f0ebe13954559285851a90d10  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000edbbf28a55faffce, ver=2, hashPrevBlock=00000000e68f500871e2, hashMerkleRoot=52d625ac22, nTime=1362567702, nBits=1f03ffff, nNonce=1913264389, vtx=1)
+  CTransaction(hash=52d625ac22, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5e0104062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=022f46563d7907bfc569697f36e171)
+  vMerkleTree: 52d625ac22 
+generated 50.00
+keypool keep 14
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000e56c909e5d6ada6c075a0a2156405c3a50874fe4ccd72cdb39a7ff324b18  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000e56c909e5d6ada6c, ver=2, hashPrevBlock=00000000e68f500871e2, hashMerkleRoot=8ff8b5c7d7, nTime=1362567702, nBits=1f03ffff, nNonce=993465605, vtx=1)
+  CTransaction(hash=8ff8b5c7d7, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5e0101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03b76e8d1ab32a1e4bf0fb62c65c2a)
+  vMerkleTree: 8ff8b5c7d7 
+generated 50.00
+AddToWallet 52d625ac22  new
+SetBestChain: new best=0000edbbf28a55faffce  height=14  work=12885295107  date=03/06/13 11:01:42
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 20, size=6
+keypool reserve 15
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 0000edbbf28a55faffce
+received block 00008d1dd36ed5c094ac
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 68ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  311ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  11ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  10ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00004af1aa584fe1cc1a33ae88529057d12b059d11393f0933bb97f03f1ea2cb  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00004af1aa584fe1cc1a, ver=2, hashPrevBlock=0000edbbf28a55faffce, hashMerkleRoot=de02591ebe, nTime=1362568903, nBits=1f03ffff, nNonce=500566533, vtx=1)
+  CTransaction(hash=de02591ebe, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5f0105062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03fce16706d916b5074dc4f137a993)
+  vMerkleTree: de02591ebe 
+generated 50.00
+keypool keep 15
+AddToWallet de02591ebe  new
+BitcoinMiner:
+proof-of-work found  
+  hash: 00004ef5b1ee5719c436a89ca5ec53d4520c48fbf9d8f5bae72d488a61984209  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00004ef5b1ee5719c436, ver=2, hashPrevBlock=0000edbbf28a55faffce, hashMerkleRoot=ae9f1ae032, nTime=1362568904, nBits=1f03ffff, nNonce=757011461, vtx=1)
+  CTransaction(hash=ae9f1ae032, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 5f0101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03b76e8d1ab32a1e4bf0fb62c65c2a)
+  vMerkleTree: ae9f1ae032 
+generated 50.00
+SetBestChain: new best=00004af1aa584fe1cc1a  height=15  work=12885311491  date=03/06/13 11:21:43
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+keypool added key 21, size=6
+keypool reserve 16
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+received getdata for: block 00004af1aa584fe1cc1a
+received block 0000d817b9b137197842
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 404ms
+Flushed 0 addresses to peers.dat  20ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  11ms
+hashmeter   2 CPUs    128 khash/s
+Flushed 0 addresses to peers.dat  302ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  33ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  99ms
+Flushed 0 addresses to peers.dat  30ms
+Flushed 0 addresses to peers.dat  22ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000ac26920b85f5039583413cb7a1e228b553c78cc4256d4755203993825871  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000ac26920b85f50395, ver=2, hashPrevBlock=00004af1aa584fe1cc1a, hashMerkleRoot=a1649714f3, nTime=1362570104, nBits=1f03ffff, nNonce=2840276229, vtx=1)
+  CTransaction(hash=a1649714f3, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 600101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03b76e8d1ab32a1e4bf0fb62c65c2a)
+  vMerkleTree: a1649714f3 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 000047802bdcd717d77e2c89f4286c4d16f1a550ec33523172c91e28008dade2  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000047802bdcd717d77e, ver=2, hashPrevBlock=00004af1aa584fe1cc1a, hashMerkleRoot=2b731cd843, nTime=1362570104, nBits=1f03ffff, nNonce=661658629, vtx=1)
+  CTransaction(hash=2b731cd843, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 600106062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: 2b731cd843 
+generated 50.00
+keypool keep 11
+AddToWallet a1649714f3  new
+SetBestChain: new best=0000ac26920b85f50395  height=16  work=12885327875  date=03/06/13 11:41:44
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+keypool added key 22, size=6
+keypool reserve 17
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received block 000043717dc53e9a3fe2
+ProcessBlock: ACCEPTED
+received getdata for: block 0000ac26920b85f50395
+Flushing wallet.dat
+Flushed wallet.dat 118ms
+Flushed 0 addresses to peers.dat  11ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  16ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  11ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00006651e6b84579bb3b88d311a79036e9d3f05ee61759c3bba2b591ec9b86a9  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00006651e6b84579bb3b, ver=2, hashPrevBlock=0000ac26920b85f50395, hashMerkleRoot=ee52ee0391, nTime=1362571305, nBits=1f03ffff, nNonce=2361845764, vtx=1)
+  CTransaction(hash=ee52ee0391, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01110102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=023e8e3747d1655aadf69297cedcbf)
+  vMerkleTree: ee52ee0391 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000c049f695a0107d1da359c13bd4d24a97f45915f3dbbf2b209a2ff93a12ad  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000c049f695a0107d1d, ver=2, hashPrevBlock=0000ac26920b85f50395, hashMerkleRoot=136633ecd1, nTime=1362571305, nBits=1f03ffff, nNonce=3057251076, vtx=1)
+  CTransaction(hash=136633ecd1, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01110101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: 136633ecd1 
+generated 50.00
+keypool keep 17
+AddToWallet ee52ee0391  new
+SetBestChain: new best=00006651e6b84579bb3b  height=17  work=12885344259  date=03/06/13 12:01:45
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+keypool added key 23, size=6
+keypool reserve 18
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received getdata for: block 00006651e6b84579bb3b
+received block 000043e73c57b6f1e6d9
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+hashmeter   2 CPUs     92 khash/s
+Flushed wallet.dat 1281ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  13ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  310ms
+Flushed 0 addresses to peers.dat  15ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  21ms
+Flushed 0 addresses to peers.dat  319ms
+Flushed 0 addresses to peers.dat  343ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  14ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 000002e548735f1eddf39e89ebf9e289136c6bc388306ee3ae3d73875196beb6  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000002e548735f1eddf3, ver=2, hashPrevBlock=00006651e6b84579bb3b, hashMerkleRoot=f8cdbb47e7, nTime=1362572507, nBits=1f03ffff, nNonce=966264837, vtx=1)
+  CTransaction(hash=f8cdbb47e7, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01120103062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02c58fda693e285b2d1c78b1cf437f)
+  vMerkleTree: f8cdbb47e7 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000ae99eb2ee9c9d03a2d955a89c7f31a392e3a9c1fea66ea01edcba082db8c  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000ae99eb2ee9c9d03a, ver=2, hashPrevBlock=00006651e6b84579bb3b, hashMerkleRoot=9afc389908, nTime=1362572507, nBits=1f03ffff, nNonce=593632773, vtx=1)
+  CTransaction(hash=9afc389908, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01120101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: 9afc389908 
+generated 50.00
+keypool keep 18
+AddToWallet f8cdbb47e7  new
+SetBestChain: new best=000002e548735f1eddf3  height=18  work=12885360643  date=03/06/13 12:21:47
+ProcessBlock: ACCEPTED
+keypool added key 24, size=6
+keypool reserve 19
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received block 00002a9e15ceba001cc5
+ProcessBlock: ACCEPTED
+received getdata for: block 000002e548735f1eddf3
+Flushing wallet.dat
+Flushed wallet.dat 99ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  22ms
+Flushed 0 addresses to peers.dat  28ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  322ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  20ms
+hashmeter   2 CPUs    128 khash/s
+Flushed 0 addresses to peers.dat  321ms
+Flushed 0 addresses to peers.dat  14ms
+Flushed 0 addresses to peers.dat  24ms
+Flushed 0 addresses to peers.dat  23ms
+Flushed 0 addresses to peers.dat  316ms
+Flushed 0 addresses to peers.dat  12ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 00004792a55b8ecd0d8e7e3c45fa6b31a11f7679e43c75a0190d7413d0b744a2  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=00004792a55b8ecd0d8e, ver=2, hashPrevBlock=000002e548735f1eddf3, hashMerkleRoot=d548463663, nTime=1362573708, nBits=1f03ffff, nNonce=2954173701, vtx=1)
+  CTransaction(hash=d548463663, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01130101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=0282c1bdb1154940788120611488a3)
+  vMerkleTree: d548463663 
+generated 50.00
+keypool keep 19
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000bc4317713c38b686f4b05663f943ca3a52fcabc9e8728f2b084928820659  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000bc4317713c38b686, ver=2, hashPrevBlock=000002e548735f1eddf3, hashMerkleRoot=07bab36557, nTime=1362573708, nBits=1f03ffff, nNonce=750655237, vtx=1)
+  CTransaction(hash=07bab36557, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01130102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: 07bab36557 
+generated 50.00
+AddToWallet d548463663  new
+SetBestChain: new best=00004792a55b8ecd0d8e  height=19  work=12885377027  date=03/06/13 12:41:48
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+keypool added key 25, size=6
+keypool reserve 20
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received block 0000b914a548754ec4ef
+ProcessBlock: ACCEPTED
+received getdata for: block 00004792a55b8ecd0d8e
+Flushing wallet.dat
+Flushed wallet.dat 76ms
+Flushed 0 addresses to peers.dat  33ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  311ms
+Flushed 0 addresses to peers.dat  26ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  66ms
+Flushed 0 addresses to peers.dat  38ms
+Flushed 0 addresses to peers.dat  363ms
+Flushed 0 addresses to peers.dat  91ms
+Flushed 0 addresses to peers.dat  335ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=getinfo
+keypool added key 26, size=6
+keypool reserve 21
+keypool return 21
+Flushing wallet.dat
+Flushed wallet.dat 290ms
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  356ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  14ms
+received block 0000fdc80e7faba2509b
+REORGANIZE
+REORGANIZE: Disconnect 6 blocks; 00000000e68f500871e2..00004792a55b8ecd0d8e
+REORGANIZE: Connect 7 blocks; 00000000e68f500871e2..0000fdc80e7faba2509b
+REORGANIZE: done
+BitcoinMiner:
+proof-of-work found  
+  hash: 000025d532e4aea1439f79f9842a4c74c95dfb2e13479e32afcdf2f0fbe2ab9c  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000025d532e4aea1439f, ver=2, hashPrevBlock=00004792a55b8ecd0d8e, hashMerkleRoot=e9a6f810a3, nTime=1362574909, nBits=1f03ffff, nNonce=3574640388, vtx=1)
+  CTransaction(hash=e9a6f810a3, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01140101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: e9a6f810a3 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 000021f601632c9ce972933572c388a8f837cb2e2d74dd2a9f2b10bf9cf11fa6  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000021f601632c9ce972, ver=2, hashPrevBlock=00004792a55b8ecd0d8e, hashMerkleRoot=885cca2243, nTime=1362574909, nBits=1f03ffff, nNonce=1283763972, vtx=1)
+  CTransaction(hash=885cca2243, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01140102062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03c3132dab42b6c0a8bbfea537ccac)
+  vMerkleTree: 885cca2243 
+generated 50.00
+SetBestChain: new best=0000fdc80e7faba2509b  height=20  work=12885393411  date=03/06/13 13:01:48
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+Flushing wallet.dat
+Flushed wallet.dat 261ms
+hashmeter   2 CPUs    113 khash/s
+Flushed 0 addresses to peers.dat  9ms
+ThreadRPCServer method=getmininginfo
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  19ms
+Flushed 0 addresses to peers.dat  631ms
+Flushed 0 addresses to peers.dat  41ms
+Flushed 0 addresses to peers.dat  309ms
+Flushed 0 addresses to peers.dat  498ms
+Flushed 0 addresses to peers.dat  11ms
+Flushed 0 addresses to peers.dat  324ms
+Flushed 0 addresses to peers.dat  147ms
+Flushed 0 addresses to peers.dat  654ms
+Flushed 0 addresses to peers.dat  158ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 0000a3a1594a83f4a279b68687013b6cc0e19e01f2a6729a1bcc4f3a7bc54872  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=0000a3a1594a83f4a279, ver=2, hashPrevBlock=0000fdc80e7faba2509b, hashMerkleRoot=5551fe20ad, nTime=1362576109, nBits=1f03ffff, nNonce=3045337348, vtx=1)
+  CTransaction(hash=5551fe20ad, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01150103062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=03c3132dab42b6c0a8bbfea537ccac)
+  vMerkleTree: 5551fe20ad 
+generated 50.00
+keypool keep 20
+BitcoinMiner:
+proof-of-work found  
+  hash: 000051c7f940b8d0f66c0c2366d8cb5014f5376c2422bc78d7f779a8a35e25a7  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000051c7f940b8d0f66c, ver=2, hashPrevBlock=0000fdc80e7faba2509b, hashMerkleRoot=2dd1dbb19f, nTime=1362576110, nBits=1f03ffff, nNonce=3106881796, vtx=1)
+  CTransaction(hash=2dd1dbb19f, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01150101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: 2dd1dbb19f 
+generated 50.00
+AddToWallet 5551fe20ad  new
+SetBestChain: new best=0000a3a1594a83f4a279  height=21  work=12885409795  date=03/06/13 13:21:49
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+keypool reserve 21
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received getdata for: block 0000a3a1594a83f4a279
+received block 00006597221a2019e0f8
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 825ms
+Flushed 0 addresses to peers.dat  152ms
+Flushed 0 addresses to peers.dat  499ms
+Flushed 0 addresses to peers.dat  473ms
+Flushed 0 addresses to peers.dat  161ms
+hashmeter   2 CPUs     14 khash/s
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  481ms
+Flushed 0 addresses to peers.dat  167ms
+Flushed 0 addresses to peers.dat  464ms
+BitcoinMiner:
+proof-of-work found  
+  hash: 000062eac6f2807cc7baba01dee43f03278f1e598e911038927509bed3680f17  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+CBlock(hash=000062eac6f2807cc7ba, ver=2, hashPrevBlock=0000a3a1594a83f4a279, hashMerkleRoot=fe556d2748, nTime=1362577311, nBits=1f03ffff, nNonce=1233518081, vtx=1)
+  CTransaction(hash=fe556d2748, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01160101062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=02d177ce3c7ce208ec2b2819e12527)
+  vMerkleTree: fe556d2748 
+generated 50.00
+BitcoinMiner:
+proof-of-work found  
+  hash: 00009a54abdf3fdac88b59c6f36b0faa7962121689ba9002707e2a6abde8fa12  
+target: 0003ffff00000000000000000000000000000000000000000000000000000000
+keypool keep 16
+CBlock(hash=00009a54abdf3fdac88b, ver=2, hashPrevBlock=0000a3a1594a83f4a279, hashMerkleRoot=a272ac3d7e, nTime=1362577311, nBits=1f03ffff, nNonce=3298950145, vtx=1)
+  CTransaction(hash=a272ac3d7e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 01160104062f503253482f)
+    CTxOut(nValue=50.00000000, scriptPubKey=028b63bffc49cf82a7fa77112ccb84)
+  vMerkleTree: a272ac3d7e 
+generated 50.00
+AddToWallet fe556d2748  new
+SetBestChain: new best=000062eac6f2807cc7ba  height=22  work=12885426179  date=03/06/13 13:41:51
+ProcessBlock: ACCEPTED
+ERROR: BitcoinMiner : generated block is stale
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+keypool added key 27, size=6
+keypool reserve 22
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (187 bytes)
+received getdata for: block 000062eac6f2807cc7ba
+received block 00009d073d130ca2c775
+ProcessBlock: ACCEPTED
+Flushing wallet.dat
+Flushed wallet.dat 9032ms
+Flushed 0 addresses to peers.dat  173ms
+Flushed 0 addresses to peers.dat  454ms
+Flushed 0 addresses to peers.dat  458ms
+Flushed 0 addresses to peers.dat  291ms
+ThreadRPCServer method=getmininginfo
+Flushed 0 addresses to peers.dat  29ms
+ResendWalletTransactions()
+Flushed 0 addresses to peers.dat  12ms
+Flushed 0 addresses to peers.dat  10ms
+Flushed 0 addresses to peers.dat  462ms
+Flushed 0 addresses to peers.dat  154ms
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadMessageHandler exited
+blkindex.dat detach
+ThreadSocketHandler exited
+ThreadOpenConnections exited
+ThreadBitcoinMiner exiting, 0 threads remaining
+blkindex.dat closed
+DBFlush(false) ended             349ms
+StopNode()
+Flushed 0 addresses to peers.dat  290ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta (2013-03-05 23:14:45 -0500)
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 14:00:18
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+ERROR: CheckProofOfWork() : nBits below minimum work
+ERROR: LoadBlockIndex() : CheckIndex failed at 6
+Bitcoin: Error loading blkindex.dat
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+blkindex.dat detach
+blkindex.dat closed
+DBFlush(false) ended            5444ms
+StopNode()
+Flushed 0 addresses to peers.dat  335ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bitcoin version v0.7.2.0-g32a928e-beta (2013-03-05 23:14:45 -0500)
+Using OpenSSL version OpenSSL 1.0.1e 11 Feb 2013
+Startup time: 03/06/13 14:01:23
+Default data directory /home/yebyen/.bitcoin
+Used data directory /home/yebyen/testnet-box/2/testnet3
+dbenv.open LogDir=/home/yebyen/testnet-box/2/testnet3/database ErrorFile=/home/yebyen/testnet-box/2/testnet3/db.log
+Loading block index...
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
+4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+CBlock(hash=000000000933ea01ad0e, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=4a5e1e4baa, nTime=1296688602, nBits=1d00ffff, nNonce=414098458, vtx=1)
+  CTransaction(hash=4a5e1e4baa, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
+    CTxOut(nValue=50.00000000, scriptPubKey=04678afdb0fe5548271967f1a67130)
+  vMerkleTree: 4a5e1e4baa 
+SetBestChain: new best=000000000933ea01ad0e  height=0  work=4295032833  date=02/02/11 23:16:42
+ block index            9197ms
+Loading wallet...
+nFileVersion = 70200
+ wallet                 1927ms
+Loading addresses...
+Loaded 0 addresses from peers.dat  0ms
+mapBlockIndex.size() = 1
+nBestHeight = 0
+setKeyPool.size() = 7
+mapWallet.size() = 19
+mapAddressBook.size() = 1
+Done loading
+ThreadRPCServer started
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:0
+DNS seeding disabled
+ThreadOpenConnections started
+trying connection 127.0.0.1:19000 lastseen=0.0hrs
+connected 127.0.0.1:19000
+send version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+ThreadOpenAddedConnections started
+ThreadOpenAddedConnections exited
+ThreadIRCSeed exited
+ThreadMessageHandler started
+ThreadSocketHandler started
+Flushed 0 addresses to peers.dat  305ms
+Added time data, samples 2, offset +0 (+0 minutes)
+receive version message: version 60002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:19000
+getblocks -1 to 00000000000000000000 limit 500
+ThreadRPCServer method=setgenerate
+2 processors
+Starting 2 BitcoinMiner threads
+BitcoinMiner started
+BitcoinMiner started
+keypool reserve 21
+CreateNewBlock(): total size 1000
+keypool reserve 22
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+CreateNewBlock(): total size 1000
+Running BitcoinMiner with 1 transactions in block (186 bytes)
+hashmeter   2 CPUs    146 khash/s
+ThreadRPCServer method=getmininginfo
+ThreadRPCServer method=stop
+Flush(false)
+blkindex.dat refcount=0
+blkindex.dat checkpoint
+ThreadSocketHandler exited
+ThreadMessageHandler exited
+blkindex.dat detach
+blkindex.dat closed
+wallet.dat refcount=0
+wallet.dat checkpoint
+wallet.dat detach
+ThreadBitcoinMiner exiting, 1 threads remaining
+ThreadOpenConnections exited
+ThreadBitcoinMiner exiting, 0 threads remaining
+wallet.dat closed
+DBFlush(false) ended            1315ms
+StopNode()
+Flushed 0 addresses to peers.dat  10ms
+Flush(true)
+DBFlush(true) ended               0ms
+Bitcoin exited
+
