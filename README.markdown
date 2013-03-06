@@ -9,7 +9,7 @@ git clone http://github.com/yebyen/testnet-debian.git; apt-get build-dep bitcoin
 pushd testnet-debian
 
 for i in *.tar.gz; do tar zxvf $i; done; mv $PACK/debian/{patches,changelog} .; rmdir $PACK/debian
-mv patches/* debian/patches/; mv changelog debian/; mv debian $PACK/; pushd bitcoin-0.7.2;  dpkg-source --commit \
+mv patches/* debian/patches/; mv changelog debian/; mv debian $PACK/; pushd $PACK;  dpkg-source --commit \
     && debuild -us -uc -b -rsudo; popd
 ```
 
