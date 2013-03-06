@@ -8,9 +8,9 @@ PACK=bitcoin-0.7.2-4
 git clone http://github.com/yebyen/testnet-debian.git; apt-get build-dep bitcoind; apt-get install devscripts
 pushd testnet-debian
 
-for i in *.tar.gz; do tar zxvf $i; done; mv $PACK/debian/patches . ; mv $PACK/debian/changelog .
-rmdir $PACK/debian; mv debian $PACK/; mv patches/* $PACK/debian/patches/; mv changelog $PACK/debian/
-pushd bitcoin-0.7.2; dpkg-source --commit && debuild -us -uc -b -rsudo; popd
+for i in *.tar.gz; do tar zxvf $i; done; mv $PACK/debian/{patches,changelog} .; rmdir $PACK/debian
+mv patches/* debian/patches/; mv changelog debian/; mv debian $PACK/; pushd bitcoin-0.7.2;  dpkg-source --commit \
+    && debuild -us -uc -b -rsudo; popd
 ```
 
 Then you simply install the bitcoind or bitcoin-qt deb that eventually is spit
