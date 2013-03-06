@@ -7,12 +7,14 @@ On Debian:
 ```
 $ git clone http://github.com/yebyen/testnet-debian.git
 $ apt-get build-dep bitcoind
-$ apt-get install fakeroot devscripts
+$ apt-get install devscripts # fakeroot
 $ pushd testnet-debian
 $ for i in *.tar.gz; do tar zxvf $i; done
-$ mv debian bitcoin-0.7.2/
+$ mv bitcoin-0.7.2/debian/patches .; rmdir bitcoin-0.7.2/debian
+$ mv debian bitcoin-0.7.2/; mv patches/* bitcoin-0.7.2/debian/patches/
 $ pushd bitcoin-0.7.2
-$ debuild -us -uc -b
+$ dpkg-source --commit
+$ debuild -us -uc -b -rsudo
 ```
 
 Then you install the bitcoind or bitcoin-qt debs that eventually spit out,
