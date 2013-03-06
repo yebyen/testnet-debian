@@ -4,24 +4,19 @@ as low as 0.00000381.
 On Debian, to build for yourself:
 
 ```
-$ PACK=bitcoin-0.7.2-4
-$ git clone http://github.com/yebyen/testnet-debian.git
-$ apt-get build-dep bitcoind
-$ apt-get install devscripts # fakeroot
-$ pushd testnet-debian
-$ for i in *.tar.gz; do tar zxvf $i; done
-$ mv $PACK/debian/patches . ; mv $PACK/debian/changelog .
-$ rmdir $PACK/debian; mv debian $PACK/; mv patches/* $PACK/debian/patches/
-$ mv changelog $PACK/debian/
-$ pushd bitcoin-0.7.2
-$ dpkg-source --commit
-$ debuild -us -uc -b -rsudo
+PACK=bitcoin-0.7.2-4
+git clone http://github.com/yebyen/testnet-debian.git; apt-get build-dep bitcoind; apt-get install devscripts
+pushd testnet-debian
+
+for i in *.tar.gz; do tar zxvf $i; done; mv $PACK/debian/patches . ; mv $PACK/debian/changelog .
+rmdir $PACK/debian; mv debian $PACK/; mv patches/* $PACK/debian/patches/; mv changelog $PACK/debian/
+pushd bitcoin-0.7.2; dpkg-source --commit && debuild -us -uc -b -rsudo; popd
 ```
 
 Then you simply install the bitcoind or bitcoin-qt deb that eventually is spit
 out, depending on your preference for graphical dependencies or not.  Don't
 forget to wipe your blockchain and wallet if you are using testnet-in-a-box!
 You will need all of the QT libraries from build-dep even to compile bitcoind
-only; they are quite interleaved.
+as a command line daemon only; they are quite interleaved in the build process.
 
 The version number 0.7.2-4 is set in the `changelog` file under `$PACK/debian`.
