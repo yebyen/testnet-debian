@@ -1,0 +1,27 @@
+Description: Lose the initial blockchain
+ You cannot discard both the initial blockchain and the wallets and still
+ generate solutions, if I am right, since blocks must contain transactions and
+ no solved blocks can be published without input, therefore no blocks can be
+ published if no original coins had been minted.  You can however discard the
+ blockchain and suppose that once you published a longer one, those coins could
+ be invalid even if they had been used as input to the first blockchain that
+ you kept, without any published record of their creation.
+ (Unless this function had returned false)
+ .
+ bitcoin (0.7.2-4) unstable; urgency=low
+ .
+   [ Kingdon Barrett ]
+   * Allow initial genesis to start without any blk0001.dat.
+Author: Kingdon Barrett <kingdon@tuesdaystudios.com>
+Last-Update: <2013-03-05>
+
+--- bitcoin-0.7.2.orig/src/main.cpp
++++ bitcoin-0.7.2/src/main.cpp
+@@ -1032,6 +1032,7 @@ int GetNumBlocksOfPeers()
+ 
+ bool IsInitialBlockDownload()
+ {
++    return false;
+     if (pindexBest == NULL || nBestHeight < Checkpoints::GetTotalBlocksEstimate())
+         return true;
+     static int64 nLastUpdate;

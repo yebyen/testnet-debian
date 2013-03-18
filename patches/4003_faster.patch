@@ -1,0 +1,31 @@
+Description: 2**31 hashes is too many
+ Not solving any blocks.  This patch is better than 4003_insane_mindiff.patch,
+ which seems to have no effect at all.
+ .
+ bitcoin (0.7.2-4) unstable; urgency=low
+ .
+   [ Kingdon Barrett ]
+   * Attempt at lowering the difficulty.
+
+Author: Kingdon Barrett <kingdon@tuesdaystudios.com>
+
+--- bitcoin-0.7.2.orig/src/main.cpp
++++ bitcoin-0.7.2/src/main.cpp
+@@ -30,7 +30,7 @@ unsigned int nTransactionsUpdated = 0;
+ 
+ map<uint256, CBlockIndex*> mapBlockIndex;
+ uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
++static CBigNum bnProofOfWorkLimit(~uint256(0) >> 14);
+ CBlockIndex* pindexGenesisBlock = NULL;
+ int nBestHeight = -1;
+ CBigNum bnBestChainWork = 0;
+@@ -917,7 +917,7 @@ int64 static GetBlockValue(int nHeight,
+ }
+ 
+ static const int64 nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
+-static const int64 nTargetSpacing = 10 * 60;
++static const int64 nTargetSpacing = 10;
+ static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+ 
+ //
