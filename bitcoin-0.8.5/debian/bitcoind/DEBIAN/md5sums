@@ -1,0 +1,9 @@
+98d6c074db61db5dd541dfaa00f57c37  usr/bin/bitcoind
+e080ba168984910deb3061a76bb18f07  usr/share/doc/bitcoind/README.Debian
+9e2332b14c3c4151597a0a98502c19dd  usr/share/doc/bitcoind/buildinfo_amd64.gz
+72d6358da60a30bf6fe8bff7963b5db9  usr/share/doc/bitcoind/changelog.Debian.gz
+04dcabb57d1fd8f3d2c2ee082c777429  usr/share/doc/bitcoind/copyright
+5088fefe9c96e983673426c1a4399d0d  usr/share/doc/bitcoind/examples/bitcoin.conf
+4902983dd9098607ea62dbc39459a308  usr/share/lintian/overrides/bitcoind
+f7376d79563e703fa8dc03184ce89b58  usr/share/man/man1/bitcoind.1.gz
+e15c4d82af515a0c84d5c49b1c199667  usr/share/man/man5/bitcoin.conf.5.gz

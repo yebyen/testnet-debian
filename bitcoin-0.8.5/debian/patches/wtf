@@ -1,0 +1,331 @@
+Description: wtf
+ unclean changes in debian upstream source package
+ .
+ bitcoin (0.8.5-2) unstable; urgency=low
+ .
+   [ Kingdon Barrett ]
+   * Disable checkpoints, disable test of checkpointing.
+   * Allow initial genesis to start without any blk0001.dat.
+   * Lower initial difficulty / minimum acceptable difficulty
+Author: Kingdon Barrett <kingdon@tuesdaystudios.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+Index: bitcoin-0.8.5/bitcoin-qt.pro
+===================================================================
+--- bitcoin-0.8.5.orig/bitcoin-qt.pro	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/bitcoin-qt.pro	2013-09-18 17:52:12.000000000 -0400
+@@ -126,7 +126,6 @@
+     PRE_TARGETDEPS += $$OUT_PWD/build/build.h
+     QMAKE_EXTRA_TARGETS += genbuild
+     DEFINES += HAVE_BUILD_INFO
+-    QMAKE_DISTCLEAN += $$OUT_PWD/build/build.h
+ }
+ 
+ QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wstack-protector
+Index: bitcoin-0.8.5/share/genbuild.sh
+===================================================================
+--- bitcoin-0.8.5.orig/share/genbuild.sh	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/share/genbuild.sh	2013-09-18 17:52:12.000000000 -0400
+@@ -11,7 +11,7 @@
+     exit 1
+ fi
+ 
+-if false; then
++if [ -e "$(which git)" ]; then
+     # clean 'dirty' status of touched files that haven't been modified
+     git diff >/dev/null 2>/dev/null 
+ 
+Index: bitcoin-0.8.5/src/db.cpp
+===================================================================
+--- bitcoin-0.8.5.orig/src/db.cpp	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/src/db.cpp	2013-09-18 17:52:12.000000000 -0400
+@@ -83,11 +83,7 @@
+     dbenv.set_errfile(fopen(pathErrorFile.string().c_str(), "a")); /// debug
+     dbenv.set_flags(DB_AUTO_COMMIT, 1);
+     dbenv.set_flags(DB_TXN_WRITE_NOSYNC, 1);
+-#ifdef DB_LOG_AUTOREMOVE
+-    dbenv.set_flags(DB_LOG_AUTOREMOVE, 1);
+-#else
+     dbenv.log_set_config(DB_LOG_AUTO_REMOVE, 1);
+-#endif
+     int ret = dbenv.open(path.string().c_str(),
+                      DB_CREATE     |
+                      DB_INIT_LOCK  |
+@@ -121,11 +117,7 @@
+     dbenv.set_lk_max_locks(10000);
+     dbenv.set_lk_max_objects(10000);
+     dbenv.set_flags(DB_AUTO_COMMIT, 1);
+-#ifdef DB_LOG_INMEMORY
+-    dbenv.set_flags(DB_LOG_INMEMORY, 1);
+-#else
+     dbenv.log_set_config(DB_LOG_IN_MEMORY, 1);
+-#endif
+     int ret = dbenv.open(NULL,
+                      DB_CREATE     |
+                      DB_INIT_LOCK  |
+Index: bitcoin-0.8.5/src/leveldb/build_detect_platform
+===================================================================
+--- bitcoin-0.8.5.orig/src/leveldb/build_detect_platform	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/src/leveldb/build_detect_platform	2013-09-18 17:52:12.000000000 -0400
+@@ -145,18 +145,6 @@
+         PORT_FILE=port/port_win.cc
+         CROSS_COMPILE=true
+         ;;
+-    GNU/kFreeBSD)
+-        PLATFORM=OS_FREEBSD
+-        PLATFORM_CFLAGS="-pthread -DOS_FREEBSD"
+-        PLATFORM_LIBS="-lpthread -lrt"
+-        PORT_FILE=port/port_posix.cc
+-        ;;
+-    GNU)
+-        PLATFORM=OS_HURD
+-        PLATFORM_CFLAGS="-pthread -DOS_HURD"
+-        PLATFORM_LIBS="-lpthread"
+-        PORT_FILE=port/port_posix.cc
+-        ;;
+     *)
+         echo "Unknown platform!" >&2
+         exit 1
+@@ -189,7 +177,7 @@
+ 
+     # If -std=c++0x works, use <cstdatomic>.  Otherwise use port_posix.h.
+     $CXX $CXXFLAGS -std=c++0x -x c++ - -o $CXXOUTPUT 2>/dev/null  <<EOF
+-      #include <atomic>
++      #include <cstdatomic>
+       int main() {}
+ EOF
+     if [ "$?" = 0 ]; then
+Index: bitcoin-0.8.5/src/leveldb/port/atomic_pointer.h
+===================================================================
+--- bitcoin-0.8.5.orig/src/leveldb/port/atomic_pointer.h	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/src/leveldb/port/atomic_pointer.h	2013-09-18 17:52:12.000000000 -0400
+@@ -21,7 +21,7 @@
+ 
+ #include <stdint.h>
+ #ifdef LEVELDB_CSTDATOMIC_PRESENT
+-#include <atomic>
++#include <cstdatomic>
+ #endif
+ #ifdef OS_WIN
+ #include <windows.h>
+@@ -38,18 +38,6 @@
+ #define ARCH_CPU_ARM_FAMILY 1
+ #elif defined(__ppc__) || defined(__powerpc__) || defined(__powerpc64__)
+ #define ARCH_CPU_PPC_FAMILY 1
+-#elif defined(__ia64__)
+-#define ARCH_CPU_IA64_FAMILY 1
+-#elif defined(__alpha__)
+-#define ARCH_CPU_ALPHA_FAMILY 1
+-#elif defined(__s390x__) || defined(__s390__)
+-#define ARCH_CPU_S390_FAMILY 1
+-#elif defined(__sparc__) || defined(__sparc64__)
+-#define ARCH_CPU_SPARC_FAMILY 1
+-#elif defined(__sh__)
+-#define ARCH_CPU_SH_FAMILY 1
+-#elif defined(__hppa__) || defined(__parisc__)
+-#define ARCH_CPU_PARISC_FAMILY 1
+ #endif
+ 
+ namespace leveldb {
+@@ -62,17 +50,9 @@
+ // http://msdn.microsoft.com/en-us/library/ms684208(v=vs.85).aspx
+ #define LEVELDB_HAVE_MEMORY_BARRIER
+ 
+-#define ReadMemoryBarrier MemoryBarrier()
+-#define WriteMemoryBarrier MemoryBarrier()
+-
+ // Gcc on x86
+ #elif defined(ARCH_CPU_X86_FAMILY) && defined(__GNUC__)
+-inline void ReadMemoryBarrier() {
+-  // See http://gcc.gnu.org/ml/gcc/2003-04/msg01180.html for a discussion on
+-  // this idiom. Also see http://en.wikipedia.org/wiki/Memory_ordering.
+-  __asm__ __volatile__("" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
++inline void MemoryBarrier() {
+   // See http://gcc.gnu.org/ml/gcc/2003-04/msg01180.html for a discussion on
+   // this idiom. Also see http://en.wikipedia.org/wiki/Memory_ordering.
+   __asm__ __volatile__("" : : : "memory");
+@@ -81,12 +61,7 @@
+ 
+ // Sun Studio
+ #elif defined(ARCH_CPU_X86_FAMILY) && defined(__SUNPRO_CC)
+-inline void ReadMemoryBarrier() {
+-  // See http://gcc.gnu.org/ml/gcc/2003-04/msg01180.html for a discussion on
+-  // this idiom. Also see http://en.wikipedia.org/wiki/Memory_ordering.
+-  asm volatile("" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
++inline void MemoryBarrier() {
+   // See http://gcc.gnu.org/ml/gcc/2003-04/msg01180.html for a discussion on
+   // this idiom. Also see http://en.wikipedia.org/wiki/Memory_ordering.
+   asm volatile("" : : : "memory");
+@@ -95,10 +70,7 @@
+ 
+ // Mac OS
+ #elif defined(OS_MACOSX)
+-inline void ReadMemoryBarrier() {
+-  OSMemoryBarrier();
+-}
+-inline void WriteMemoryBarrier() {
++inline void MemoryBarrier() {
+   OSMemoryBarrier();
+ }
+ #define LEVELDB_HAVE_MEMORY_BARRIER
+@@ -116,99 +88,17 @@
+ // shows that the extra function call cost is completely negligible on
+ // multi-core devices.
+ //
+-inline void ReadMemoryBarrier() {
+-  (*(LinuxKernelMemoryBarrierFunc)0xffff0fa0)();
+-}
+-inline void WriteMemoryBarrier() {
++inline void MemoryBarrier() {
+   (*(LinuxKernelMemoryBarrierFunc)0xffff0fa0)();
+ }
+ #define LEVELDB_HAVE_MEMORY_BARRIER
+ 
+ // PPC
+ #elif defined(ARCH_CPU_PPC_FAMILY) && defined(__GNUC__)
+-
+-inline void ReadMemoryBarrier() {
+-#ifdef __powerpc64__
+-  __asm__ __volatile__ ("lwsync" : : : "memory");
+-#else
+-  __asm__ __volatile__ ("sync" : : : "memory");
+-#endif
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__ ("sync" : : : "memory");
+-}
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// IA64
+-#elif defined(ARCH_CPU_IA64_FAMILY)
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__ ("mf" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__ ("mf" : : : "memory");
+-}
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// ALPHA
+-#elif defined(ARCH_CPU_ALPHA_FAMILY)
+-
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__("mb" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__("wmb" : : : "memory");
+-}
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// S390
+-#elif defined(ARCH_CPU_S390_FAMILY)
+-
+-inline void ReadMemoryBarrier() {
+-  asm volatile("bcr 15,0" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  asm volatile("bcr 15,0" : : : "memory");
+-}
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// SPARC
+-#elif defined(ARCH_CPU_SPARC_FAMILY)
+-
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__("" : : : "memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__("" : : : "memory");
+-}
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// SH
+-#elif defined(ARCH_CPU_SH_FAMILY)
+-#if defined(__SH4A__) || defined(__SH5__)
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__ ("synco": : :"memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__ ("synco": : :"memory");
+-}
+-#else
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__ ("": : :"memory");
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__ ("": : :"memory");
+-}
+-#endif
+-#define LEVELDB_HAVE_MEMORY_BARRIER
+-
+-// PARISC
+-#elif defined(ARCH_CPU_PARISC_FAMILY)
+-
+-inline void ReadMemoryBarrier() {
+-  __asm__ __volatile__("" : : : "memory")
+-}
+-inline void WriteMemoryBarrier() {
+-  __asm__ __volatile__("" : : : "memory")
++inline void MemoryBarrier() {
++  // TODO for some powerpc expert: is there a cheaper suitable variant?
++  // Perhaps by having separate barriers for acquire and release ops.
++  asm volatile("sync" : : : "memory");
+ }
+ #define LEVELDB_HAVE_MEMORY_BARRIER
+ 
+@@ -226,11 +116,11 @@
+   inline void NoBarrier_Store(void* v) { rep_ = v; }
+   inline void* Acquire_Load() const {
+     void* result = rep_;
+-    ReadMemoryBarrier();
++    MemoryBarrier();
+     return result;
+   }
+   inline void Release_Store(void* v) {
+-    WriteMemoryBarrier();
++    MemoryBarrier();
+     rep_ = v;
+   }
+ };
+@@ -327,12 +217,6 @@
+ #undef ARCH_CPU_X86_FAMILY
+ #undef ARCH_CPU_ARM_FAMILY
+ #undef ARCH_CPU_PPC_FAMILY
+-#undef ARCH_CPU_IA64_FAMILY
+-#undef ARCH_CPU_ALPHA_FAMILY
+-#undef ARCH_CPU_S390_FAMILY
+-#undef ARCH_CPU_SPARC_FAMILY
+-#undef ARCH_CPU_SH_FAMILY
+-#undef ARCH_CPU_PARISC_FAMILY
+ 
+ }  // namespace port
+ }  // namespace leveldb
+Index: bitcoin-0.8.5/src/leveldb/util/env_posix.cc
+===================================================================
+--- bitcoin-0.8.5.orig/src/leveldb/util/env_posix.cc	2013-09-18 17:52:12.000000000 -0400
++++ bitcoin-0.8.5/src/leveldb/util/env_posix.cc	2013-09-18 17:52:12.000000000 -0400
+@@ -337,7 +337,7 @@
+       size_t p1 = TruncateToPageBoundary(last_sync_ - base_);
+       size_t p2 = TruncateToPageBoundary(dst_ - base_ - 1);
+       last_sync_ = dst_;
+-      if (msync(base_ + p1, p2 - p1 + page_size_, MS_SYNC) < 0 && errno != ENOSYS) {
++      if (msync(base_ + p1, p2 - p1 + page_size_, MS_SYNC) < 0) {
+         s = IOError(filename_, errno);
+       }
+     }

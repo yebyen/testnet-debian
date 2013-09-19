@@ -1,0 +1,10 @@
+1002_libdb-squeeze.patch
+1003_qmake_cleanup.patch
+1006_libmemenv_kfrebsd.patch
+1007_libmemenv_hurd.patch
+1008_libmemenv_cstdatomic_renaming.patch
+2001_stupify_header_script.patch
+2002_libmemenv_debian-ports.patch
+wtf
+4001_yebyen.patch
+4002_yebyen.patch

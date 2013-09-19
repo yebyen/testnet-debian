@@ -4,13 +4,21 @@ as low as 0.00000381.
 On Debian, to build for yourself:
 
 ```
-PACK=bitcoin-0.7.2
+PACK=bitcoin-0.8.5
 git clone http://github.com/yebyen/testnet-debian.git; apt-get build-dep bitcoind; apt-get install devscripts
 pushd testnet-debian
 
 for i in *.tar.gz; do tar zxvf $i; done; mv $PACK/debian/{patches,changelog} .; rmdir $PACK/debian
-mv patches/* debian/patches/; mv changelog debian/; mv debian $PACK/; pushd $PACK;  dpkg-source --commit \
-    && debuild -us -uc -b -rsudo; popd
+mv patches/* debian/patches/; mv changelog debian/; mv debian $PACK/
+pushd $PACK/ && dpkg-source --commit \
+  && debuild -us -uc -b -rsudo; popd
+cd $PACK/
+rm src/leveldb/build_config.mk
+rm -r src/obj-test/*
+rm -r src/obj/*
+rm -r build/
+rm qrc_bitcoin.cpp
+
 ```
 
 Then you simply install the bitcoind or bitcoin-qt deb that eventually is spit

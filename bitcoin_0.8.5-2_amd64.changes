@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 05 Mar 2013 19:49:30 -0500
+Source: bitcoin
+Binary: bitcoind bitcoin-qt
+Architecture: amd64
+Version: 0.8.5-2
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Bitcoin Packaging Team <pkg-bitcoin-devel@lists.alioth.debian.org>
+Changed-By: Kingdon Barrett <kingdon@tuesdaystudios.com>
+Description: 
+ bitcoin-qt - peer-to-peer network based digital currency - GUI
+ bitcoind   - peer-to-peer network based digital currency - daemon
+Changes: 
+ bitcoin (0.8.5-2) unstable; urgency=low
+ .
+   [ Kingdon Barrett ]
+   * Disable checkpoints, disable test of checkpointing.
+   * Allow initial genesis to start without any blk0001.dat.
+   * Lower initial difficulty / minimum acceptable difficulty
+Checksums-Sha1: 
+ 57c8deeea78d07a530f2a98899ee37c0cb1ea4ca 1088688 bitcoind_0.8.5-2_amd64.deb
+ 64d9488efdcdc8393301064333a84138fc4323cf 2480866 bitcoin-qt_0.8.5-2_amd64.deb
+Checksums-Sha256: 
+ 7b3db259a1eb5f3865e88120550b8c6a848b8c6f83d8898a874f2cf30a67ed52 1088688 bitcoind_0.8.5-2_amd64.deb
+ 005eae01fff12ac156132e0f6c21ae188e40afd4a69f9db8c4bf959ad84d62e7 2480866 bitcoin-qt_0.8.5-2_amd64.deb
+Files: 
+ aa88c3f23ae5c1b3ce1e29d86dd8058f 1088688 utils optional bitcoind_0.8.5-2_amd64.deb
+ 7fc28f8fb5cb6b5added9bde52934524 2480866 utils optional bitcoin-qt_0.8.5-2_amd64.deb

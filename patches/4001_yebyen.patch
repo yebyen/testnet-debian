@@ -1,0 +1,111 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ bitcoin (0.8.5-2) unstable; urgency=low
+ .
+   [ Kingdon Barrett ]
+   * Disable checkpoints, disable test of checkpointing.
+   * Allow initial genesis to start without any blk0001.dat.
+   * Lower initial difficulty / minimum acceptable difficulty
+Author: Kingdon Barrett <kingdon@tuesdaystudios.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ bitcoin-0.8.5/build/build.h
+@@ -0,0 +1,2 @@
++// No build information available
++#define BUILD_DATE "2013-03-17 22:09:34 -0400"
+--- bitcoin-0.8.5.orig/src/checkpoints.cpp
++++ bitcoin-0.8.5/src/checkpoints.cpp
+@@ -81,8 +81,9 @@ namespace Checkpoints
+         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
+ 
+         MapCheckpoints::const_iterator i = checkpoints.find(nHeight);
+-        if (i == checkpoints.end()) return true;
+-        return hash == i->second;
++        //if (i == checkpoints.end()) return true;
++        return true;
++        //return hash == i->second;
+     }
+ 
+     // Guess how far we are in the verification process at the given block index
+@@ -118,6 +119,7 @@ namespace Checkpoints
+ 
+     int GetTotalBlocksEstimate()
+     {
++        return 0;
+         if (!GetBoolArg("-checkpoints", true))
+             return 0;
+ 
+@@ -128,6 +130,7 @@ namespace Checkpoints
+ 
+     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
+     {
++        return NULL;
+         if (!GetBoolArg("-checkpoints", true))
+             return NULL;
+ 
+--- bitcoin-0.8.5.orig/src/main.cpp
++++ bitcoin-0.8.5/src/main.cpp
+@@ -32,7 +32,7 @@ unsigned int nTransactionsUpdated = 0;
+ 
+ map<uint256, CBlockIndex*> mapBlockIndex;
+ uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
++static CBigNum bnProofOfWorkLimit(~uint256(0) >> 14);
+ CBlockIndex* pindexGenesisBlock = NULL;
+ int nBestHeight = -1;
+ uint256 nBestChainWork = 0;
+@@ -1072,7 +1072,7 @@ int64 static GetBlockValue(int nHeight,
+ }
+ 
+ static const int64 nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
+-static const int64 nTargetSpacing = 10 * 60;
++static const int64 nTargetSpacing = 10;
+ static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+ 
+ //
+@@ -1187,6 +1187,7 @@ int GetNumBlocksOfPeers()
+ 
+ bool IsInitialBlockDownload()
+ {
++    return false;
+     if (pindexBest == NULL || fImporting || fReindex || nBestHeight < Checkpoints::GetTotalBlocksEstimate())
+         return true;
+     static int64 nLastUpdate;
+--- bitcoin-0.8.5.orig/src/test/Checkpoints_tests.cpp
++++ bitcoin-0.8.5/src/test/Checkpoints_tests.cpp
+@@ -21,14 +21,14 @@ BOOST_AUTO_TEST_CASE(sanity)
+ 
+     
+     // Wrong hashes at checkpoints should fail:
+-    BOOST_CHECK(!Checkpoints::CheckBlock(11111, p134444));
+-    BOOST_CHECK(!Checkpoints::CheckBlock(134444, p11111));
++    //BOOST_CHECK(!Checkpoints::CheckBlock(11111, p134444));
++    //BOOST_CHECK(!Checkpoints::CheckBlock(134444, p11111));
+ 
+     // ... but any hash not at a checkpoint should succeed:
+     BOOST_CHECK(Checkpoints::CheckBlock(11111+1, p134444));
+     BOOST_CHECK(Checkpoints::CheckBlock(134444+1, p11111));
+ 
+-    BOOST_CHECK(Checkpoints::GetTotalBlocksEstimate() >= 134444);
++    //BOOST_CHECK(Checkpoints::GetTotalBlocksEstimate() >= 134444);
+ }    
+ 
+ BOOST_AUTO_TEST_SUITE_END()

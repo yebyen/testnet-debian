@@ -1,0 +1,23 @@
+Package: bitcoind
+Source: bitcoin
+Version: 0.8.5-2
+Architecture: amd64
+Maintainer: Debian Bitcoin Packaging Team <pkg-bitcoin-devel@lists.alioth.debian.org>
+Installed-Size: 3249
+Depends: libboost-filesystem1.54.0, libboost-program-options1.54.0, libboost-system1.54.0, libboost-thread1.54.0, libc6 (>= 2.15), libdb5.1++, libgcc1 (>= 1:4.1.1), libminiupnpc5, libssl1.0.0 (>= 1.0.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+Suggests: db-util, db4.8-util
+Section: utils
+Priority: optional
+Homepage: http://www.bitcoin.org/
+Description: peer-to-peer network based digital currency - daemon
+ Bitcoin is a free open source peer-to-peer electronic cash system that
+ is completely decentralized, without the need for a central server or
+ trusted parties.  Users hold the crypto keys to their own money and
+ transact directly with each other, with the help of a P2P network to
+ check for double-spending.
+ .
+ Full transaction history is stored locally at each client.  This
+ requires several GB of space, slowly growing.
+ .
+ This package provides bitcoind, a combined daemon and CLI tool to
+ interact with the daemon.
